@@ -190,7 +190,7 @@ def push_and_tag_images(push_base_images: bool):
         if _merge_build():
             result = DOCKER_CLIENT.api.push(image, tag=tag)
             print(f"PUSHING: {image}:{tag}, result:")
-            print(result)
+#             print(result)
         else:
             print(
                 "This is a PR Build! On a merge build, we would normally push "
